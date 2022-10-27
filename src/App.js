@@ -841,35 +841,35 @@ export default function App() {
         );
         var r2 = await response.json();
         let punks = {
-            id: "snij3-kyaaa-aaaae-qac7a-cai",
+            id: "4pfba-2yaaa-aaaae-qad7a-cai",
             priority: 10,
-            name: "pineapple punks",
-            brief: "2009 unique, randomly generated flowers",
+            name: "punks",
+            brief: "The IC Mobsters - Part I",
             description:
-                "The BTC Flower: Created back in 2017 by famous contemporary artist Ludo in the physical world – now moving to digital form on the Internet Computer",
-            blurb: "<p>In early 2018, BTC Flower made its debut on the streets of Paris. An unusual kind of Ludo piece, sharing the same techno-flower chimera archetype, but with a different tone and style. R.I.P Banking System was an uplifting symbol framed with an elegantly simple message. There’s not a forced entanglement, but a genuine symbiosis of the natural and technical. Greenery keeps its original plant form with Bitcoin at its core, able to bloom from the remains of a failed Fiat system. A seed had been planted, if you will. BTC Flower is the digital version of the R.I.P Banking System art piece. It exists as an assortment of 2009 unique variations, the original plants that will spawn a garden commemorating accomplishments of the cryptosphere.</p>",
-            keywords: "art ludo flower btc bitcoin streetart btcflower",
-            web: "https://btcflower.xyz/",
-            discord: "https://discord.gg/GGEFTC9PzH",
-            twitter: "https://twitter.com/btcflower",
-            medium: "https://btcflower.medium.com/",
-            banner: "/collections/btcflower/banner.jpg",
-            avatar: "/collections/btcflower/avatar.jpg",
-            collection: "/collections/btcflower/collection.jpg",
-            route: "pineapple",
-            commission: 0.085,
-            legacy: "fd860cd46c75bd8226e222e94548c131621a962d9af5ed95104a9a7a0e5cdad2",
+                "Triad Boys Society is the first collection from The IC Mobsters, containing 5555 NFTs on the Internet Computer blockchain.",
+            blurb: "Triad Boys Society is the first collection from The IC Mobsters. The secondary market royalties will go into a Neuron and owning a Triad Boy will give you the privilege to vote what happens with the Neuron. The Italian Mob will air in late June and the two gangs will get into war in a P2E Game in August. After the two gangs made peace, their sons & daughters started falling in love with each other, bringing the Baby Mobsters into the ICP blockchain! ",
+            keywords: "Airdrops Utilities Neuron Staking DAO P2E Breeding",
+            web: "https://triadboyssociety.com",
+            discord: "https://discord.gg/yY2ksHPUHW",
+            twitter: "https://www.twitter.com/TriadBoysS",
+            banner: "https://ucarecdn.com/693d3a0f-4da4-4f35-b0b3-2d74428b3d35/",
+            avatar: "https://ucarecdn.com/9ea24ea7-8468-4621-8e2f-c35fe4f21305/",
+            collection:
+                "https://ucarecdn.com/693b0d8b-6435-43ea-a8fc-f4fe9e7ccd6a/",
+            route: "punks",
+            commission: 0.08,
+            legacy: "",
             unit: "NFT",
-            nftv: true,
+            nftv: false,
             mature: false,
             market: true,
             dev: false,
-            external: true,
-            filter: true,
+            external: false,
+            filter: false,
             sale: true,
-            earn: true,
+            earn: false,
         };
-        r2.append(punks);
+        r2.push(punks);
         //Remove dev marked canisters
         if (isDevEnv() == false) {
             r2 = r2.filter((a) => !a.dev);

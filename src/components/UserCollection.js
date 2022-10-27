@@ -88,6 +88,7 @@ const loadAllTokens = async (address, principal) => {
   var response = (await Promise.all([axios("https://us-central1-entrepot-api.cloudfunctions.net/api/user/"+address+"/all").then(r => r.data.map(a => ({...a, token : a.id})))].concat([
     "4nvhy-3qaaa-aaaah-qcnoq-cai",
     "qcg3w-tyaaa-aaaah-qakea-cai",
+    "4pfba-2yaaa-aaaae-qad7a-cai",
     //"jzg5e-giaaa-aaaah-qaqda-cai",
     "d3ttm-qaaaa-aaaai-qam4a-cai",
     "xkbqi-2qaaa-aaaah-qbpqq-cai",
